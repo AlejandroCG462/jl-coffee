@@ -138,7 +138,11 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ember)}
 .form-msg.bad{color:#ff7b82}
 
 /* Ubicación */
-address{font-style:normal;font-size:20px;margin:0 0 24px}
+address{font-style:normal;font-size:20px;margin:0}
+.branches{display:grid;gap:14px;margin:0 0 28px}
+.branch{border:1px solid var(--cork);border-radius:12px;background:var(--bark);padding:18px 22px;display:grid;gap:8px;justify-items:start}
+.branch p{margin:0;color:var(--muted)}
+.branch .btn{padding:12px 20px;margin-top:4px}
 .contact-list{list-style:none;padding:0;margin:0 0 28px;border-top:1px dashed var(--cork)}
 .contact-list li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px dashed var(--cork)}
 .contact-list a{text-decoration:none;border-bottom:1px solid var(--drift)}
@@ -208,7 +212,7 @@ address{font-style:normal;font-size:20px;margin:0 0 24px}
         <p class="lead">Crepas, café con latte art, malteadas y bebidas de colores. Un lugar para sentarte, platicar y disfrutar.</p>
 
         <div class="facts" aria-label="Datos rápidos">
-          <div><span class="k">Dónde</span><span class="v">Av Ata 106, Atlacomulco</span></div>
+          <div><span class="k">Dónde</span><span class="v">Av Ata 106, Atlacomulco y Sucursal Fabela</span></div>
           <div><span class="k">Cuándo</span><span class="v">Todos los días · 9:30 a.m. – 9:30 p.m.</span></div>
           <div><span class="k">¿Cita?</span><span class="v">No hace falta. Llega cuando quieras.</span></div>
           <div><span class="k">Contacto</span><span class="v"><a href="tel:+527122485217">+52 712 248 5217</a></span></div>
@@ -319,15 +323,18 @@ address{font-style:normal;font-size:20px;margin:0 0 24px}
       <div class="loc-grid">
         <div class="reveal">
           <p class="label">Dónde estamos</p>
-          <h2 id="t-ubi">Av Ata 106, Atlacomulco.</h2>
-          <address>Av Ata 106, 50450<br>Atlacomulco de Fabela, Méx.</address>
+          <h2 id="t-ubi">Dos lugares para visitarnos.</h2>
+          <div class="branches">
+            <div class="branch"><span class="k">Sucursal principal</span><address>Av Ata 106, 50450<br>Atlacomulco de Fabela, Méx.</address></div>
+            <div class="branch"><span class="k">Sucursal Fabela</span><p>Encuéntranos también en nuestra sucursal Fabela.</p><a class="btn btn-ghost" href="https://maps.google.com/?cid=11887116475915120309" target="_blank" rel="noopener noreferrer">Ver sucursal Fabela en Maps</a></div>
+          </div>
           <ul class="contact-list">
             <li><span class="k">Teléfono</span><a href="tel:+527122485217">+52 712 248 5217</a></li>
             <li><span class="k">WhatsApp</span><a href="https://wa.me/527122485217" target="_blank" rel="noopener noreferrer">Escríbenos</a></li>
             <li><span class="k">Facebook</span><a href="https://www.facebook.com/JLCoffeeB/" target="_blank" rel="noopener noreferrer">/JLCoffeeB</a></li>
             <li><span class="k">Instagram</span><a href="https://www.instagram.com/jlcoffeebar19/" target="_blank" rel="noopener noreferrer">@jlcoffeebar19</a></li>
           </ul>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av+Ata+106,+50450+Atlacomulco+de+Fabela,+M%C3%A9x." target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av+Ata+106,+50450+Atlacomulco+de+Fabela,+M%C3%A9x." target="_blank" rel="noopener noreferrer">Abrir principal en Google Maps</a>
         </div>
         <div class="map reveal">
           <iframe title="Mapa de JL COFFEE" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
